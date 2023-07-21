@@ -31,7 +31,7 @@ const OTPScreen = () => {
             <View className="flex-1 bg-white px-8 pt-8">
             <View className="flex-col items-center justify-center">
           <Image
-            source={require("../assets/images/otp.png")}
+            source={require("../../assets/images/otp.png")}
             style={{ width: 350, height: 350 }}
           />
 
@@ -51,7 +51,7 @@ const OTPScreen = () => {
             onPress={() => navigation.goBack()}
              className="p-2 bg-gray-100 rounded-full">
             <Image
-              source={require("../assets/icons/pencile.png")}
+              source={require("../../assets/icons/pencile.png")}
               className="w-5 h-5"
             />
           </TouchableOpacity>
