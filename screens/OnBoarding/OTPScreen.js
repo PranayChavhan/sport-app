@@ -84,7 +84,7 @@ const OTPScreen = () => {
             onPress={() => navigation.navigate("Verification")}
             className="py-3 bg-orange-500 rounded-xl min-w-full mt-5"
           >
-            <Text className="text-lg font-semibold text-center text-gray-700">
+            <Text className="text-lg font-semibold text-center text-white">
               Submit
             </Text>
           </TouchableOpacity>

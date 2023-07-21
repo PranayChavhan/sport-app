@@ -22,7 +22,7 @@ export default function WelcomeScreen() {
             onPress={() => navigation.navigate("SignUp")}
             className="py-3 bg-orange-500 mx-7 rounded-xl"
           >
-            <Text className="text-xl font-bold text-center text-gray-800">
+            <Text className="text-xl font-bold text-center text-white">
               Sign Up
             </Text>
           </TouchableOpacity>

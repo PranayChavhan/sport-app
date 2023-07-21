@@ -23,16 +23,18 @@ const VerificationScreen = () => {
       <Text className="mb-2 mt-0 text-3xl font-medium leading-tight">
           Let's get you verified
         </Text>
-        <Text className="mb-5 -mt-1 text-gray-400 leading-tight">
+        <Text className="mt-1 text-gray-400 leading-tight">
           We need to check that you're really you. It helps us fight fraud and keep our business secure.
         </Text>
 
         <Image
-            source={require("../../assets/images/otp.png")}
+            source={require("../../assets/images/verification.png")}
             style={{ width: 300, height: 300 }}
           />
 
-        <TouchableOpacity className="h-[110px] shadow-xl shadow-black flex flex-row items-center justify-center p-2 px-4 rounded-lg bg-white">
+        <TouchableOpacity onPress={() => navigation.navigate("Address")}
+
+        className="h-[110px] shadow-xl shadow-black flex flex-row items-center justify-center p-2 px-4 rounded-lg bg-white">
           <View className="flex flex-row items-center gap-5 p-2">
         
             <Image
@@ -54,11 +56,13 @@ const VerificationScreen = () => {
           </View>
         </TouchableOpacity>
 
-        <TouchableOpacity className="h-[110px] mt-2 shadow-xl shadow-black flex flex-row items-center justify-center p-2 px-4 rounded-lg bg-white">
+        <TouchableOpacity
+        onPress={() => navigation.navigate("Identity")}
+         className="h-[110px] mt-2 shadow-xl shadow-black flex flex-row items-center justify-center p-2 px-4 rounded-lg bg-white">
           <View className="flex flex-row items-center gap-5 p-2">
         
             <Image
-              source={require("../../assets/icons/home.png")}
+              source={require("../../assets/icons/id-card.png")}
               className="w-8 h-8"
             />
         
@@ -75,6 +79,16 @@ const VerificationScreen = () => {
             />
           </View>
         </TouchableOpacity>
+
+        <TouchableOpacity
+        // disabled={true}
+            onPress={() => navigation.navigate("Success")}
+            className="py-3 bg-orange-300 rounded-xl min-w-full mt-5"
+          >
+            <Text className="text-lg font-semibold text-center text-white">
+              Continue
+            </Text>
+          </TouchableOpacity>
 
       </View>
     </View>

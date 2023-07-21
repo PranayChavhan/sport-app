@@ -78,7 +78,7 @@ export default function LoginScreen() {
             onPress={() => navigation.navigate("Home")}
             className="py-3 bg-orange-500 rounded-xl"
           >
-            <Text className="text-xl font-bold text-center text-gray-700">
+            <Text className="text-xl font-bold text-center text-white">
               Login
             </Text>
           </TouchableOpacity>
@@ -99,7 +99,7 @@ export default function LoginScreen() {
             onPress={() => navigation.navigate("OTP")}
             className="py-3 bg-orange-500 rounded-xl"
           >
-            <Text className="text-lg font-semibold text-center text-gray-700">
+            <Text className="text-lg font-semibold text-center text-white">
               Request OTP
             </Text>
           </TouchableOpacity>

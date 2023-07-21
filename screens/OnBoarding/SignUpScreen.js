@@ -64,7 +64,7 @@ export default function SignUpScreen() {
             onPress={() => navigation.navigate("OTP")}
             className="py-3 bg-orange-500 rounded-xl"
           >
-            <Text className="font-2xl font-bold text-center text-gray-800">
+            <Text className="font-2xl font-bold text-center text-white">
               Request OTP
             </Text>
           </TouchableOpacity>
