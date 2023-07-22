@@ -12,7 +12,7 @@ import UploadDoc from '../screens/Verification/uploadDoc';
 import Identity from '../screens/Verification/identity';
 import Success from '../screens/Verification/success';
 import HomeScreen from '../screens/Tabs/HomeScreen';
-import TabNavigation from '../screens/TabNavigation/tabNavigation';
+import TabNavigation from './tabNavigation';
 
 const Stack = createNativeStackNavigator();
 
@@ -20,7 +20,7 @@ const Stack = createNativeStackNavigator();
 export default function AppNavigation() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName='Welcome'>
+      <Stack.Navigator initialRouteName='Tab'>
         
         <Stack.Screen name="Welcome" options={{headerShown: false}} component={WelcomeScreen} />
         <Stack.Screen name="Login" options={{headerShown: false}} component={LoginScreen} />
@@ -31,7 +31,6 @@ export default function AppNavigation() {
         <Stack.Screen name="Identity" options={{headerShown: false}} component={Identity} />
         <Stack.Screen name="UploadDoc" options={{headerShown: false}} component={UploadDoc}  />
         <Stack.Screen name="Success" options={{headerShown: false}} component={Success}  />
-        <Stack.Screen name="Home" options={{headerShown: false}} component={HomeScreen}  />
         <Stack.Screen name="Tab" options={{headerShown: false}} component={TabNavigation}  />
       </Stack.Navigator>
     </NavigationContainer>
