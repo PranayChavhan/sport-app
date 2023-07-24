@@ -18,7 +18,7 @@ const AccountScreen = () => {
             <View className="w-[30%]">
               <TouchableOpacity className="rounded-full ">
                 <Image
-                  source={require("../../assets/images/Pranay.jpg")}
+                  source={require("../../assets/images/Pranay.jpeg")}
                   className="w-32 h-32 rounded-full"
                 />
               </TouchableOpacity>
@@ -29,15 +29,15 @@ const AccountScreen = () => {
               </Text>
 
               <Text className="text-[12px] font-semibold text-gray-500">
-                @ImPranay
+                @ImShitanshu
               </Text>
             </View>
             <Text className="text-[24px] font-semibold text-gray-700 mt-3 mb-2">
-              Pranay Chavhan
+              Shitanshu Badwaik
             </Text>
             <View className="flex flex-row items-center gap-5">
               <Text className="text-[12px] font-semibold text-gray-500">
-                chavhanpranay48@gmail.com
+                shitanshubadwaik48@gmail.com
               </Text>
               <TouchableOpacity>
                 <Image

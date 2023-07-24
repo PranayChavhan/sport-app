@@ -1,8 +1,9 @@
-import { View, Text, TouchableOpacity, Image, TextInput } from "react-native";
+import { View, Text, TouchableOpacity, Image, TextInput,Platform } from "react-native";
 import React, { useState } from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { ArrowLeftIcon } from "react-native-heroicons/solid";
 import { useNavigation } from "@react-navigation/native";
+import { ANDROID } from "nativewind/dist/utils/selector";
 
 export default function LoginScreen() {
   const navigation = useNavigation();
@@ -32,9 +33,10 @@ export default function LoginScreen() {
 
         <View className="mb-10 rounded-2xl h-14 mt-4 flex flex-row p-1 items-center justify-between bg-gray-100">
           <TouchableOpacity
+          
             className={` ${
               activeTab === "email"
-                ? " bg-white px-14 py-3 rounded-2xl shadow-2xl shadow-black"
+                ? " bg-white px-14 py-3 rounded-2xl shadow-2xl {}" 
                 : "px-16 py-3"
             }`}
             onPress={() => setActiveTab("email")}

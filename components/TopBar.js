@@ -41,12 +41,12 @@ const Topbar = () => {
              className="w-[28px] h-[28px]"
            />
          </TouchableOpacity>
-         <TouchableOpacity className="rounded-2xl">
+         {/* <TouchableOpacity className="rounded-2xl">
            <Image
              source={require("../assets/icons/hamburger.png")}
              className="w-[28px] h-[28px]"
            />
-         </TouchableOpacity>
+         </TouchableOpacity> */}
 
          </View>
        </View>
